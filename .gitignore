@@ -3,6 +3,3 @@ node_modules
 
 # Ignore built ts files
 dist/**/*
-
-# Package Lock
-package-lock.json
