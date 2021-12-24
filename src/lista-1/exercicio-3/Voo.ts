@@ -13,7 +13,7 @@ export class Voo
 
     public Vagas():number
     {
-        return this._cadeiras.filter(c => c.estaOcupado() == false).length;
+        return this._cadeiras.filter(c => !c.estaOcupado()).length;
     }
 
     public getVoo():number
@@ -37,7 +37,7 @@ export class Voo
     }
 
     public proximoLivre(): number {
-        return this._cadeiras.filter(c => c.estaOcupado() == false)[0].getNumeroAssento();
+        return this._cadeiras.filter(c => !c.estaOcupado())[0].getNumeroAssento();
     }
 
     public estaOcupado(assento: number): boolean {
@@ -51,7 +51,8 @@ export class Voo
         {
             let numeroAssento = i+1;
             cadeiras.push(new Cadeira(numeroAssento));
-        };
+        }
+        
         return cadeiras;
     }
 }
