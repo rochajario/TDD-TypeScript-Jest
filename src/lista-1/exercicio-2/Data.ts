@@ -38,7 +38,6 @@ export class Data{
 
     public isBissexto():boolean
     {
-        const criterios = (this._ano.valor() % 4 == 0)||(this._ano.valor() % 400 == 0);
-        return (criterios);
+        return (this._ano.valor() % 4 == 0)||(this._ano.valor() % 400 == 0);
     }
 }

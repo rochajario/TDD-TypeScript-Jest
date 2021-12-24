@@ -7,7 +7,7 @@ export class Aluno
         private _nome:string, 
         private _matricula:string,
         private _notasProva: Array<number>,
-        private _notaTrabalho: number) {};
+        private _notaTrabalho: number) {}
 
     public get nome():string{
         return this._nome;
