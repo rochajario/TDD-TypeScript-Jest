@@ -10,5 +10,4 @@ export class Ano extends BaseComponenteData
         }
         return valor;
     }
-    
 }

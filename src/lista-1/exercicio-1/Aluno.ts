@@ -11,16 +11,16 @@ export class Aluno
 
     public get nome():string{
         return this._nome;
-    };
+    }
 
     public get matricula():string{
         return this._matricula;
-    };
+    }
 
     public get media():number
     {
         return (this.getMediaProvas() + this.getMediaTrabalho())/((this._notasProva.length * this.MEDIA_PONDERADA_PROVA) + this.MEDIA_PONDERADA_TRABALHO);
-    };
+    }
 
     public get final():number
     {
@@ -39,10 +39,10 @@ export class Aluno
         });
 
         return somaNotasProva;
-    };
+    }
     
     private getMediaTrabalho():number
     {
         return this._notaTrabalho * 2;
-    };
+    }
 }

@@ -5,91 +5,35 @@ describe('Testa Diversos aspectos do objeto Data', ()=>{
     describe('Valida construção de objeto "Data"',()=>{
         describe('Deveria obter erro ao tentar criar classe com Dia fora de intervalo aceitável',()=>{
             it('Levanta exceção quando dia é menor que 0',()=>{
-                try
-                {
-                    new Data(-1,1,2000);
-                }
-                catch(error)
-                {
-                    expect(error).toBeInstanceOf(ParametroDataErro);
-                }
+                validaParametroDataErro(-1,1,2000);
             });
             it('Levanta exceção quando dia é igual a 0',()=>{
-                try
-                {
-                    const data = new Data(0,1,2000);
-                }
-                catch(error)
-                {
-                    expect(error).toBeInstanceOf(ParametroDataErro);
-                }
+                validaParametroDataErro(0,1,2000);
             });
             it('Levanta exceção quando dia é maior que 31',()=>{
-                try
-                {
-                    const data = new Data(32,1,2000);
-                }
-                catch(error)
-                {
-                    expect(error).toBeInstanceOf(ParametroDataErro);
-                }
+                validaParametroDataErro(32,1,2000);
             });
         });
     
         describe('Deveria obter erro ao tentar criar classe com Mês fora de intervalo aceitável',()=>{
             it('Levanta exceção quando Mês é menor que 1',()=>{
-                try
-                {
-                    new Data(1,-1,2000);
-                }
-                catch(error)
-                {
-                    expect(error).toBeInstanceOf(ParametroDataErro);
-                }
+                validaParametroDataErro(1,-1,2000);
             });
             it('Levanta exceção quando Mês é igual a 0',()=>{
-                try
-                {
-                    new Data(1,0,2000);
-                }
-                catch(error)
-                {
-                    expect(error).toBeInstanceOf(ParametroDataErro);
-                }
+                validaParametroDataErro(1,0,2000);
             });
-            it('Levanta exceção quando Mês é maior que 31',()=>{
-                try
-                {
-                    new Data(1,13,2000);
-                }
-                catch(error)
-                {
-                    expect(error).toBeInstanceOf(ParametroDataErro);
-                }
+            it('Levanta exceção quando Mês é maior que 12',()=>{
+                validaParametroDataErro(1,13,2000);
             });
         });
     
         describe('Deveria obter erro ao tentar criar classe com Ano fora de intervalo aceitável',()=>{
             it('Levanta exceção quando Ano é igual a 0',()=>{
-                try
-                {
-                    new Data(1,1,0);
-                }
-                catch(error)
-                {
-                    expect(error).toBeInstanceOf(ParametroDataErro);
-                }
+                validaParametroDataErro(1,1,0);
             });
     
             it('Levanta exceção quando Ano é menor que 1',()=>{
-                try
-                {
-                    new Data(1,1,-1);
-                }
-                catch(error)
-                {
-                    expect(error).toBeInstanceOf(ParametroDataErro);
-                }
+                validaParametroDataErro(1,1,-1);
             });
             
         });
@@ -156,3 +100,14 @@ describe('Testa Diversos aspectos do objeto Data', ()=>{
         });
     });
 });
+function validaParametroDataErro(dia:number, mes:number, ano:number):void
+{
+    try
+    {
+        new Data(dia,mes,ano);
+    }
+    catch(error)
+    {
+        expect(error).toBeInstanceOf(ParametroDataErro);
+    }
+}
