@@ -1,10 +1,16 @@
+import { MesesPorExtenso } from "../../lista-1/exercicio-2/ComponentesData/MesesPorExtenso";
 import { Data } from "../../lista-1/exercicio-2/Data";
 import { Equipamentos } from "./equipamentos";
+import {Item} from "./item";
 
 export class EquipamentosCorrigidos extends Equipamentos
 {
+
+    protected mesCorrente:MesesPorExtenso;
+
     constructor(numeroEquipamentos:number) {
         super(numeroEquipamentos);
+        this.mesCorrente = 1;
     }
 
     public setDataCompra(id:number, data:Data):void
@@ -35,5 +41,41 @@ export class EquipamentosCorrigidos extends Equipamentos
             this.setDataCompra(idItem, outro.getDataCompra(idItem));
             this.setValor(idItem, outro.getValor(idItem));
         })
+    }
+
+    public corrige(taxa:number):void
+    {
+        const itensTemporarios = this.atribuiCorrecao(taxa);
+        this.substitui(itensTemporarios);
+        this.avancaMesCorrente();
+    }
+
+    private atribuiCorrecao(taxaPercentual:number):EquipamentosCorrigidos
+    {
+        let itensTemporarios = new EquipamentosCorrigidos(this.getQuantidadeEquipamentos());
+        this.itens.forEach(i => {
+            if(i.dataCompra.getMes()== this.mesCorrente as number)
+            {
+                let percentualDoValorAtual = i.valor*(taxaPercentual/100);
+                itensTemporarios.setValor(i.numero(),i.valor + percentualDoValorAtual);
+                itensTemporarios.setDataCompra(i.numero(), i.dataCompra);
+            }
+            else
+            {
+                itensTemporarios.setValor(i.numero(),i.valor);
+                itensTemporarios.setDataCompra(i.numero(), i.dataCompra);
+            }
+        });
+        return itensTemporarios;
+    }
+
+    private avancaMesCorrente():void
+    {
+        if(this.mesCorrente == 12)
+        {
+            this.mesCorrente = 1;
+            return;
+        }
+        this.mesCorrente++;
     }
 }

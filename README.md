@@ -48,8 +48,14 @@
             <li><a href="./src/lista-2/exercicio-2">Resolução - Exercício II</a></li>
         </ul>
     </li>
-    <li><a href="./listas/lista-03.pdf">Lista III - Polimorfismo</a></li>
-    <li><a href="./listas/lista-03.pdf">Lista IV - Interfaces</a></li>
+    <li>
+        <a href="./listas/lista-03.pdf">Lista III - Polimorfismo (PDF)</a>
+        <ul>
+            <li><a href="./src/lista-3/exercicio-1">Resolução - Exercício I</a></li>
+            <li><a href="./src/lista-3/exercicio-2">Resolução - Exercício II</a></li>
+        </ul>
+    </li>
+    <li><a href="./listas/lista-03.pdf">Lista IV - Interfaces (PDF)</a></li>
 </ul>
 
 <h2>Testando o projeto</h2>

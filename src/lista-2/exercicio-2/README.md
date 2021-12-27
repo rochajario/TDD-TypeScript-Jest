@@ -85,3 +85,14 @@ Valida critérios da classe EquipamentosCorrigidos relacionados à data:
 ```bash
 node "./node_modules/jest/bin/jest.js" "./test/lista-2/exercicio-2.test.ts" -t "Lista 2 - Exercício 2 Valida critérios da classe EquipamentosCorrigidos relacionados à data"
 ```
+
+Valida critérios relacionados à substituição de itens:
+
+```bash
+node "./node_modules/jest/bin/jest.js" "./test/lista-2/exercicio-2.test.ts" -t "Lista 2 - Exercício 2 Valida critérios relacionados à substituição de itens"
+```
+
+Valida critérios relacionados à correção dos valores de itens:
+```bash
+node "./node_modules/jest/bin/jest.js" "./test/lista-2/exercicio-2.test.ts" -t "Lista 2 - Exercício 2 Valida critérios relacionados à correção dos valores de itens"
+```
