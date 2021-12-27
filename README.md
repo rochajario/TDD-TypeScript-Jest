@@ -1,5 +1,5 @@
 <p align="center">
-    <h1 align="center">Afiando o Machado do TDD Com TypeScript e Jest</h1>
+    <h1 align="center">Afiando o Machado - TDD Com TypeScript e Jest</h1>
     <h3>Senta que lá vem história...</h3>
     <pre><strong>A metáfora do Lenhador</strong><em>
     “Um velho lenhador experiente foi desafiado por um forte 

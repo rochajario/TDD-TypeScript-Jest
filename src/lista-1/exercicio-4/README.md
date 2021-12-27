@@ -1,14 +1,14 @@
-# Lista 1 - Questão 4
+# Listagem I - Questão IV
 
-> Considere a seguinte classe Java, cujo método respostaQuestao recebe como parâmetro o número de uma
+> Considere a seguinte classe TypeScript, cujo método respostaQuestao recebe como parâmetro o número de uma
 questão e retorna a sua resposta correta, proveniente de um gabarito.
 
-```Java
-public class Gabarito
+```TypeScript
+export class Gabarito
 {
-    public char respostaQuestao(int numeroQuestao)
+    public respostaQuestao(numeroQuestao:number):string
     {
-        //retorna letra correspondente à questão solicitada.
+        return "Reposta para questão passada como argumento";
     }
 }
 ```
@@ -48,8 +48,26 @@ Para executar toda a suíte de testes referente à este exercício:
 npm run test -i .\test\lista-1\exercicio-4.test.ts -t "Lista 1 - Exercício 4"
 ```
 
-Nome do Teste:
+Identifica comportamento anômalo previsto na classe Gabarito:
 
 ```bash
-node "./node_modules/jest/bin/jest.js" "./test/lista-1/exercicio-4.test.ts" -t "Lista 1 - Exercício 4 Nome do Teste"
+node "./node_modules/jest/bin/jest.js" "./test/lista-1/exercicio-4.test.ts" -t "Lista 1 - Exercício 4 Identifica comportamento anômalo previsto na classe Gabarito"
+```
+
+Valida funcionamento da implementação de gabarito:
+
+```bash
+node "./node_modules/jest/bin/jest.js" "./test/lista-1/exercicio-4.test.ts" -t "Lista 1 - Exercício 4 Valida funcionamento da implementação de gabarito"
+```
+
+Valida propriedades de uma Prova:
+
+```bash
+node "./node_modules/jest/bin/jest.js" "./test/lista-1/exercicio-4.test.ts" -t "Lista 1 - Exercício 4 Valida propriedades de uma Prova"
+```
+
+Valida resultados de uma prova:
+
+```bash
+node "./node_modules/jest/bin/jest.js" "./test/lista-1/exercicio-4.test.ts" -t "Lista 1 - Exercício 4 Valida resultados de uma prova"
 ```

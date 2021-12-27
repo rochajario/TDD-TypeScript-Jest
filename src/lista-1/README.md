@@ -1,11 +1,23 @@
-<h1 align="center">Lista de Exercícios 1 - Classes</h1>
+<h1 align="center">Listagem I - Classes</h1>
 <ul>
-    <li>Exercício 1</li>
-    <li>Exercício 2</li>
-    <li>Exercício 3</li>
-    <li>Exercício 4</li>
-    <li>Exercício 5</li>
-    <li>Exercício 6</li>
+    <li> 
+        <a href="./exercicio-1/README.md">Questão I</a> 
+    </li>
+    <li> 
+        <a href="./exercicio-2/README.md">Questão II</a> 
+    </li>
+    <li> 
+        <a href="./exercicio-3/README.md">Questão III</a> 
+    </li>
+    <li> 
+        <a href="./exercicio-4/README.md">Questão IV</a> 
+    </li>
+    <li> 
+        <a href="./exercicio-5/README.md">Questão V</a> 
+    </li>
+    <li> 
+        <a href="./exercicio-6/README.md">Questão VI</a> 
+    </li>
 </ul>
 
 > Exercitando conceitos básicos da OO. e iniciando a prática de TDD utilizando Typescript e Jest

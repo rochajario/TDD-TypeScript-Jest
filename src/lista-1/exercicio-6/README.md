@@ -1,6 +1,6 @@
-# Lista 1 - Questão 5
+# Listagem I - Questão VI
 
-> Cria uma classe VetorOrdenado que é uma variante da classe anterior, com as seguintes modificações
+> Cria uma classe ListaOrdenada que é uma variante da classe anterior, com as seguintes modificações
 e acréscimos:
 
 <table>
@@ -23,8 +23,14 @@ Para executar toda a suíte de testes referente à este exercício:
 npm run test -i .\test\lista-1\exercicio-6.test.ts -t "Lista 1 - Exercício 6"
 ```
 
-Nome do Teste:
+Valida Propriedades da Lista Ordenada:
 
 ```bash
-node "./node_modules/jest/bin/jest.js" "./test/lista-1/exercicio-6.test.ts" -t "Lista 1 - Exercício 6 Nome do Teste"
+node "./node_modules/jest/bin/jest.js" "./test/lista-1/exercicio-6.test.ts" -t "Lista 1 - Exercício 6 Valida Propriedades da Lista Ordenada"
+```
+
+Valida Propriedades da Lista Ordenada após união com outra lista ordenada:
+
+```bash
+node "./node_modules/jest/bin/jest.js" "./test/lista-1/exercicio-6.test.ts" -t "Lista 1 - Exercício 6 Valida Propriedades da Lista Ordenada após união com outra lista ordenada"
 ```

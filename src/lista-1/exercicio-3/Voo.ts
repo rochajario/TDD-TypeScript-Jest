@@ -4,11 +4,19 @@ import { Cadeira } from "./Cadeira";
 export class Voo 
 {
     
-    private _cadeiras: Array<Cadeira>;
+    protected _cadeiras: Array<Cadeira>;
+    protected _quantidadeAssentos:number;
+
+    protected _numeroVoo: number;
+    protected _dataVoo: Data;
  
-    constructor( private _numeroVoo: number, private _dataVoo: Data,) 
+    constructor(numeroVoo:number, dataVoo:Data) 
     {
-        this._cadeiras = this.criarAssentos();
+        this._cadeiras = new Array<Cadeira>();
+        this._quantidadeAssentos = 0;
+        this._numeroVoo = numeroVoo;
+        this._dataVoo = dataVoo;
+        this.configuraQuantidadeDeAssentos(100);
     }
 
     public Vagas():number
@@ -28,7 +36,7 @@ export class Voo
 
     public ocupa(assento:number):void
     {
-        if(assento < 1 || assento > 100)
+        if(assento < 1 || assento > this._quantidadeAssentos)
         {
             throw Error('Assento precisa pertencer ao intervalo 1-100.')
         }
@@ -44,10 +52,16 @@ export class Voo
         return this._cadeiras.filter(c => c.getNumeroAssento()==assento)[0].estaOcupado();
     }
 
-    private criarAssentos():Array<Cadeira>
+    protected configuraQuantidadeDeAssentos(quantidadeAssentos:number)
+    {
+        this._quantidadeAssentos = quantidadeAssentos;
+        this._cadeiras = this.criarAssentos();
+    }
+
+    protected criarAssentos():Array<Cadeira>
     {
         let cadeiras: Cadeira[] = [];
-        for(var i = 0; i < 100; i++)
+        for(var i = 0; i < this._quantidadeAssentos; i++)
         {
             let numeroAssento = i+1;
             cadeiras.push(new Cadeira(numeroAssento));

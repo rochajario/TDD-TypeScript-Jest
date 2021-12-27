@@ -1,4 +1,4 @@
-# Lista 2 - Questão 2
+# Listagem II - Questão II
 
 > Dada uma classe Equipamento na qual cada objeto representa um conjunto de N equipamentos de
 uma empresa com seus respectivos valores, cujo diagrama UML está representado a seguir:
@@ -43,11 +43,15 @@ uma empresa com seus respectivos valores, cujo diagrama UML está representado a
     </tr>
     <tr>
         <th>getMesCompra</th>
-        <td>Recebe como parâmetro o número do equipamento (começando de zero) e retorna seu mês de compra</td>
+        <td>Recebe como parâmetro o número do equipamento (começando de zero) e retorna seu mês de compra por extenso, baseando-se nos métodos públicos da classe data elaborada na lista 1</td>
     </tr>
     <tr>
-        <th>setMesCompra</th>
-        <td>Recebe como parâmetro o número do equipamento e seu mês de compra e o registra</td>
+        <th>getDataCompra</th>
+        <td>Recebe como parâmetro o número do equipamento (começando de zero) e retorna um objeto do tipo data.</td>
+    </tr>
+    <tr>
+        <th>setDataCompra</th>
+        <td>Recebe como parâmetro o número do equipamento e a data da compra, baseada na classe data elaborada na lista 1</td>
     </tr>
     <tr>
         <th>corrige</th>
@@ -67,11 +71,17 @@ indiretamente, até mesmo pela classe herdeira.
 Para executar toda a suíte de testes referente à este exercício:
 
 ```bash
-npm run test -i .\test\lista-2\exercicio-1.test.ts -t "Lista 2 - Exercício 1"
+npm run test -i .\test\lista-2\exercicio-2.test.ts -t "Lista 2 - Exercício 2"
 ```
 
-Nome do Teste:
+Valida critérios gerais da classe Equipamentos:
 
 ```bash
-node "./node_modules/jest/bin/jest.js" "./test/lista-2/exercicio-1.test.ts" -t "Lista 2 - Exercício 1 Nome do Teste"
+node "./node_modules/jest/bin/jest.js" "./test/lista-2/exercicio-2.test.ts" -t "Lista 2 - Exercício 2 Valida critérios gerais da classe Equipamentos"
+```
+
+Valida critérios da classe EquipamentosCorrigidos relacionados à data:
+
+```bash
+node "./node_modules/jest/bin/jest.js" "./test/lista-2/exercicio-2.test.ts" -t "Lista 2 - Exercício 2 Valida critérios da classe EquipamentosCorrigidos relacionados à data"
 ```

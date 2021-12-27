@@ -1,4 +1,4 @@
-<h1 align="center">Lista de Exercícios 2 - Herança</h1>
+<h1 align="center">Listagem II - Herança</h1>
 <ul>
     <li>Exercício 1</li>
     <li>Exercício 2</li>

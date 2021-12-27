@@ -1,4 +1,4 @@
-# Lista 1 - Questão 3
+# Listagem I - Questão III
 
 > Escreva uma classe em que cada objeto representa um vôo que acontece em determinada data. Cada vôo possui no máximo 100 passageiros, e a classe permite controlar a ocupação
 das vagas. A classe deve ter os seguintes métodos:

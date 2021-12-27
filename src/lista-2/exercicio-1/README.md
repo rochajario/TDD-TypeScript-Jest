@@ -1,4 +1,4 @@
-# Lista 2 - Questão 1
+# Listagem II - Questão I
 
 > Escreva uma classe herdeira à voo criada na lista de exercícios anterior, que permita definir quantas
 cadeiras existem no máximo no voo e se dividir o avião em ala de fumantes e não fumantes. Para isto esta
@@ -19,7 +19,7 @@ classe deve acrescentar os atributos necessários e adicionar os seguintes méto
     </tr>
     <tr>
         <th>tipo</th>
-        <td>recebe como parâmetro o número da cadeira e retorna ‘F’ se for uma cadeira para fumantes e ‘N’ se for para não fumantes</td>
+        <td>recebe como parâmetro o número da cadeira e retorna ‘Fumante’ se for uma cadeira para fumantes e ‘Não Fumante’ se for para não fumantes</td>
     </tr>
 </table>
 
@@ -33,8 +33,14 @@ Para executar toda a suíte de testes referente à este exercício:
 npm run test -i .\test\lista-2\exercicio-1.test.ts -t "Lista 2 - Exercício 1"
 ```
 
-Nome do Teste:
+Valida Construção de Objeto Voo Com Fumantes:
 
 ```bash
-node "./node_modules/jest/bin/jest.js" "./test/lista-2/exercicio-1.test.ts" -t "Lista 2 - Exercício 1 Nome do Teste"
+node "./node_modules/jest/bin/jest.js" "./test/lista-2/exercicio-1.test.ts" -t "Lista 2 - Exercício 1 Valida Construção de Objeto Voo Com Fumantes"
+```
+
+Valida utilização de métodos extendidos:
+
+```bash
+node "./node_modules/jest/bin/jest.js" "./test/lista-2/exercicio-1.test.ts" -t "Lista 2 - Exercício 1 Valida utilização de métodos extendidos"
 ```
