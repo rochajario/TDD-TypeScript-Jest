@@ -1,7 +1,6 @@
 import { MesesPorExtenso } from "../../lista-1/exercicio-2/ComponentesData/MesesPorExtenso";
 import { Data } from "../../lista-1/exercicio-2/Data";
 import { Equipamentos } from "./equipamentos";
-import {Item} from "./item";
 
 export class EquipamentosCorrigidos extends Equipamentos
 {
