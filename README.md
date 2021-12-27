@@ -19,7 +19,6 @@
 ---
 
 <h2>Objetivos do Projeto</h2>
-<hr>
 
 > Prática de conceitos relacionados à Orientação a Objetos através da execução de exercícios propostos pelo professor do <strong>Instituto de Computação da Unicamp</strong> <em>(André Santanchè)</em> através de sua <a href="https://www.ic.unicamp.br/~santanch/teaching/oop/2015-1/index.html">página pública</a> com os seguintes objetivos:
 
@@ -30,7 +29,6 @@
 </ul>
 
 <h2>Listas de Exercícios</h2>
-<hr>
 <ul>
     <li>
         <a href="./listas/lista-01.pdf">Lista I - Classes (PDF)</a>
@@ -55,7 +53,6 @@
 </ul>
 
 <h2>Testando o projeto</h2>
-<hr>
 Instale as dependências necessárias para executar os testes:
 
 ```bash
