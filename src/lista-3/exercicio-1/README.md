@@ -68,8 +68,20 @@ Para executar toda a suíte de testes referente à este exercício:
 npm run test -i .\test\lista-3\exercicio-1.test.ts -t "Lista 3 - Exercício 1"
 ```
 
-Teste Específico
+Valida critérios de adição e busca de pessoas:
 
 ```bash
-node "./node_modules/jest/bin/jest.js" "./test/lista-3/exercicio-1.test.ts" -t "Lista 3 - Exercício 1 Teste Específico"
+node "./node_modules/jest/bin/jest.js" "./test/lista-3/exercicio-1.test.ts" -t "Lista 3 - Exercício 1 Valida critérios de adição e busca de pessoas"
+```
+
+Deveria validar os critérios de busca sequencial:
+
+```bash
+node "./node_modules/jest/bin/jest.js" "./test/lista-3/exercicio-1.test.ts" -t "Lista 3 - Exercício 1 Deveria validar os critérios de busca sequencial"
+```
+
+Valida critérios da classe Utilitários:
+
+```bash
+node "./node_modules/jest/bin/jest.js" "./test/lista-3/exercicio-1.test.ts" -t "Lista 3 - Exercício 1 Valida critérios da classe Utilitários"
 ```
