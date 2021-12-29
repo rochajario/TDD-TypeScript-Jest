@@ -35,7 +35,6 @@ export class PessoaRepositorio implements IRepositorio<IPessoa>
             throw Error("Não há próxima pessoa. Para utilizar esta função novamente adicione otra pessoa.");
         }
         this.ultimoItemRecuperado++;
-        const pessoa = this.pessoas[this.ultimoItemRecuperado];
-        return pessoa;
+        return this.pessoas[this.ultimoItemRecuperado];
     }
 }
