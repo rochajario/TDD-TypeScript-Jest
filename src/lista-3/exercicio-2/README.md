@@ -83,8 +83,20 @@ Para executar toda a suíte de testes referente à este exercício:
 npm run test -i .\test\lista-3\exercicio-1.test.ts -t "Lista 3 - Exercício 2"
 ```
 
-Teste Específico
+Valida critérios de criação de Pluviometro:
 
 ```bash
-node "./node_modules/jest/bin/jest.js" "./test/lista-3/exercicio-2.test.ts" -t "Lista 3 - Exercício 2 Teste Específico"
+node "./node_modules/jest/bin/jest.js" "./test/lista-3/exercicio-2.test.ts" -t "Lista 3 - Exercício 2 Valida critérios de criação de Pluviometro"
+```
+
+Valida critérios de Caminhão Alfa:
+
+```bash
+node "./node_modules/jest/bin/jest.js" "./test/lista-3/exercicio-2.test.ts" -t "Lista 3 - Exercício 2 Valida critérios de Caminhão Alfa"
+```
+
+Valida critérios de Caminhão Beta:
+
+```bash
+node "./node_modules/jest/bin/jest.js" "./test/lista-3/exercicio-2.test.ts" -t "Lista 3 - Exercício 2 Valida critérios de Caminhão Beta"
 ```
