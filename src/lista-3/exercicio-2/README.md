@@ -2,30 +2,7 @@
 
 > Um   órgão   de   levantamento   meteorológico   possui   equipamentos   para   medir   a   pluviosidade
 (pluviômetros), onde cada unidade é representada em um programa de computador por um objeto da
-classe:
-
-```Java
-public class Pluviometro
-{
-    protected String tipo;
-    public Pluviometro(String tipo)
-    {
-        :
-    }
-    public String getTipo()
-    {
-        :
-    }
-    public int getPeso()
-    {
-        :
-    }
-    public int getCapacidade()
-    {
-        :
-    }
-}
-```
+classe "Pluviometro" representada na tabela abaixo:
 
 <table>
     <tr>
@@ -42,9 +19,7 @@ public class Pluviometro
     </tr>
 </table>
 
-> Os pluviômetros são carregados por caminhões que, no programa de computador, são representados
-genericamente por objetos da classe Caminhao (esta classe não deve ser implementada nesta questão). A
-classe define os seguintes métodos.
+> Os pluviômetros são carregados por caminhões que, são representados pela classe abstrata Caminhao. A classe define os seguintes métodos.
 
 <table>
     <tr>
@@ -74,6 +49,7 @@ capacidades diferentes:
 </ul>
 
 > Ambas as classes devem sobrescrever o método <em>inserePluviometro</em>.
+> Obs.: Alterações que fogem (um pouco) da regra de negócio proposta foram realizadas durante a execução da tarefa com a finalidade de explorar o uso da orientação a objetos.
 
 ---
 
