@@ -9,7 +9,7 @@
 
 <h2>Objetivos do Projeto</h2>
 
-> Prática de conceitos relacionados à Orientação a Objetos através da execução de exercícios propostos pelo professor do <strong>Instituto de Computação da Unicamp</strong> <em>(André Santanchè)</em> utilizando exercícios da disciplina de Programação Orientada à Objetos do ano de 2015.
+> Prática de conceitos relacionados à Orientação a Objetos através da execução de exercícios propostos na disciplina de Programação Orientada à Objetos do ano de 2015 do <strong>Instituto de Computação da Unicamp</strong>.
 
 <ul>
     <li>Prática de Desenvolvimento Orientado à Testes (TDD) buscando maneiras mais eficazes de estruturar testes.</li>
