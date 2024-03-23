@@ -4,7 +4,7 @@
     </h1>
 </p>
 
-[![Build and Test CI](https://github.com/rochajario/unicamp-oo-typescript/actions/workflows/test.yml/badge.svg)](https://github.com/rochajario/unicamp-oo-typescript/actions/workflows/test.yml)   [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rochajario_unicamp-oo-typescript&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=rochajario_unicamp-oo-typescript)   [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=rochajario_unicamp-oo-typescript&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=rochajario_unicamp-oo-typescript)   [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=rochajario_unicamp-oo-typescript&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=rochajario_unicamp-oo-typescript)   [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=rochajario_unicamp-oo-typescript&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=rochajario_unicamp-oo-typescript)
+[![Build and Test CI](https://github.com/rochajario/unicamp-oo-typescript/actions/workflows/test.yml/badge.svg)](https://github.com/rochajario/unicamp-oo-typescript/actions/workflows/test.yml)
 ---
 
 <h2>Objetivos do Projeto</h2>
