@@ -1,12 +1,15 @@
 <p align="center">
-    <h1 align="center">Test Driven Development Practice Using TypeScript</h1></p>
+    <h1 align="center">
+        Prática de Desenvolvimento Orientado à Testes com TypeScript
+    </h1>
+</p>
 
 [![Build and Test CI](https://github.com/rochajario/unicamp-oo-typescript/actions/workflows/test.yml/badge.svg)](https://github.com/rochajario/unicamp-oo-typescript/actions/workflows/test.yml)   [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rochajario_unicamp-oo-typescript&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=rochajario_unicamp-oo-typescript)   [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=rochajario_unicamp-oo-typescript&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=rochajario_unicamp-oo-typescript)   [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=rochajario_unicamp-oo-typescript&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=rochajario_unicamp-oo-typescript)   [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=rochajario_unicamp-oo-typescript&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=rochajario_unicamp-oo-typescript)
 ---
 
 <h2>Objetivos do Projeto</h2>
 
-> Prática de conceitos relacionados à Orientação a Objetos através da execução de exercícios propostos pelo professor do <strong>Instituto de Computação da Unicamp</strong> <em>(André Santanchè)</em> através de sua <a href="https://www.ic.unicamp.br/~santanch/teaching/oop/2015-1/index.html">página pública</a> com os seguintes objetivos:
+> Prática de conceitos relacionados à Orientação a Objetos através da execução de exercícios propostos pelo professor do <strong>Instituto de Computação da Unicamp</strong> <em>(André Santanchè)</em> utilizando exercícios da disciplina de Programação Orientada à Objetos do ano de 2015.
 
 <ul>
     <li>Prática de Desenvolvimento Orientado à Testes (TDD) buscando maneiras mais eficazes de estruturar testes.</li>
